@@ -6,7 +6,7 @@ MLX_LIB = $(MLX_DIR)/libmlx.a
 MLX_FLAGS = -L$(MLX_DIR) -lmlx -lm -lX11 -lXext
 INCLUDES = -I ./includes
 SRC_DIR = ./srcs
-SRCS = $(SRC_DIR)/main.c $(SRC_DIR)/mlx_manager.c $(SRC_DIR)/fractal_calculations.c
+SRCS = $(SRC_DIR)/main.c $(SRC_DIR)/mlx_manager.c $(SRC_DIR)/fractal_calculations.c $(SRC_DIR)/check_params.c
 OBJS = $(SRCS:.c=.o)
 NAME = fractol
 

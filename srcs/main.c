@@ -1,7 +1,13 @@
 #include "../includes/fractol.h"
 
-int main()
+int main(int argc, char **argv)
 {
+	enum Fractal frac = ft_check_params(argc, argv);
+	if (frac == NOT_IMP)
+	{
+		return 1;
+	}
+	
 	t_app_data data;
 
 	data.mlx_ptr = mlx_init();
