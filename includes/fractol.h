@@ -8,6 +8,7 @@
 #define HEIGHT 600
 #define ESC_KEY 65307
 #define MAX_ITER 25
+#define UPPER_BOUND_MANDLEBROT 4.0
 
 typedef struct s_app_data
 {

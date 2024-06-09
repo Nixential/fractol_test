@@ -12,11 +12,11 @@ int ft_calculate_mantlebrot(double real, double imag)
 	{
 		z_real_sq = z_real * z_real;
 		z_imag_sq = z_imag * z_imag;
-
-		if (z_real_sq + z_imag_sq > 4.0)
+		if (z_real_sq + z_imag_sq > UPPER_BOUND_MANDLEBROT)
 			break;
-		z_imag = 2.0 * z_real * z_imag + imag;
+		double temp_imag = 2.0 * z_real * z_imag + imag;
 		z_real = z_real_sq - z_imag_sq + real;
+		z_imag = temp_imag;
 
 		iterations++;
 	}

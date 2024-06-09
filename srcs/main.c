@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 	{
 		return 1;
 	}
-	
+
 	t_app_data data;
 
 	data.mlx_ptr = mlx_init();
@@ -23,4 +23,5 @@ int main(int argc, char **argv)
 	mlx_key_hook(data.mlx_window, &ft_key_hook, &data);
 	mlx_loop(data.mlx_ptr);
 	ft_free_app(&data);
+	return (0);
 }
