@@ -20,9 +20,7 @@ int main(int argc, char **argv)
 		free(data.mlx_ptr);
 		return 1;
 	}
-
 	mlx_key_hook(data.mlx_window, &ft_key_hook, &data);
 	mlx_loop(data.mlx_ptr);
-
 	ft_free_app(&data);
 }
